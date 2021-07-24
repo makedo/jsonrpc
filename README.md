@@ -11,7 +11,7 @@ Built according to json rpc standard 2.0 described in https://www.jsonrpc.org/sp
 
 ## Usage
 
-###Basic Example
+### Basic Example
 ```php
 use Makedo\JsonRpc\Handler\Request\CallbackHandler;
 use Makedo\JsonRpc\Request;
@@ -44,7 +44,7 @@ echo $httpResponse->getBody()->getContents();
 //{"jsonrpc":"2.0", "result":"Hello world", "id": "1"}
 ```
 
-###Error example with debug
+### Error example with debug
 ```php
 use Makedo\JsonRpc\Exception\JsonRpcError;
 use Makedo\JsonRpc\Handler\Request\CallbackHandler;
@@ -73,7 +73,7 @@ echo $httpResponse->getBody()->getContents();
 //{"jsonrpc":"2.0", "error":{"code":-32601, "message":"Method not found", "data": {"debug":{"debugMessage":"An error occurred", "previousMessage":null, "trace":[...]}}}, "id": "1"}
 ```
 
-###Advanced Usage
+### Advanced Usage
 
 #### Custom Json Encoder
 ```php
@@ -204,6 +204,6 @@ $builder = (new HandlerBuilder())->buildHttpRequestHandler(
 ```
 
 
-###Plans and TODOS
+### Plans and TODOS
 - Async handling of batch requests
 
