@@ -4,6 +4,7 @@
   "type": "library",
   "description": "Json RPC server implementation for php with PSR-7 and PSR-11 support",
   "license": "MIT",
+  "keywords": ["jsonrpc", "json"],
   "authors": [
     {
       "name": "makedo",
