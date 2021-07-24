@@ -1,5 +1,6 @@
 # Json RPC server
 Built according to json rpc standard 2.0 described in https://www.jsonrpc.org/specification
+with batch requests support
 
 ## Requirements
 - PHP >= 8.0
